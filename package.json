@@ -4,20 +4,35 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "startDev": "nodemon index"
+    "startDev": "nodemon index",
+    "test": "jest --watchAll --verbose --runInBand --detectOpenHandles --coverage",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "10.16.3"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "compress": "^0.99.0",
     "config": "^3.3.0",
     "express": "^4.16.2",
+    "express-async-errors": "^3.1.1",
+    "helmet": "^3.22.0",
     "joi": "^13.1.0",
     "joi-objectid": "^3.0.1",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.15",
+    "moment": "^2.24.0",
     "mongoose": "^5.9.5",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "winston": "^3.2.1",
+    "winston-mongodb": "^3.0.2"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "supertest": "^4.0.2"
   }
 }
